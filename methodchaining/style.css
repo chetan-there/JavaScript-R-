@@ -1,0 +1,41 @@
+body {
+  font-family: sans-serif;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  padding: 40px;
+  text-align: center;
+}
+
+.container {
+  background: #fff;
+  padding: 30px;
+  width: 500px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+textarea {
+  width: 90%;
+  height: 100px;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+pre {
+  margin-top: 20px;
+  text-align: left;
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 5px;
+  white-space: pre-wrap;
+}

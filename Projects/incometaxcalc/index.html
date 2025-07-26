@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Income Tax Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="container animate">
+    <h1><i class="fas fa-calculator"></i> Income Tax Calculator</h1>
+    <p>For FY 2024–25 | India</p>
+
+    <input type="number" id="income" placeholder="Enter your annual income (₹)" />
+    <button onclick="calculateTax()"><i class="fas fa-check-circle"></i> Calculate</button>
+    
+    <div id="result" class="result-box"></div>
+
+    <div class="tax-rules">
+      <h2><i class="fas fa-gavel"></i> Current Tax Slabs</h2>
+      <p><strong>Old Regime</strong> (Without deductions):</p>
+      <ul>
+        <li>₹0 – ₹2.5L → <strong>0%</strong></li>
+        <li>₹2.5L – ₹5L → <strong>5%</strong></li>
+        <li>₹5L – ₹10L → <strong>20%</strong></li>
+        <li>Above ₹10L → <strong>30%</strong></li>
+      </ul>
+      <p><strong>New Regime</strong> (With ₹75K std. deduction):</p>
+      <ul>
+        <li>₹0 – ₹3L → <strong>0%</strong></li>
+        <li>₹3L – ₹6L → <strong>5%</strong></li>
+        <li>₹6L – ₹9L → <strong>10%</strong></li>
+        <li>₹9L – ₹12L → <strong>15%</strong></li>
+        <li>₹12L – ₹15L → <strong>20%</strong></li>
+        <li>Above ₹15L → <strong>30%</strong></li>
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
